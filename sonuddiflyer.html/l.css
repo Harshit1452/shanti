@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.flyer {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.header {
+  position: relative;
+}
+
+.header img.main-image {
+  width: 20%;
+  height: 49;
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #6e2db5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  background: #6e2db5;
+  color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: absolute;
+}
+
+.circle1 {
+  top: 220px;
+  left: 30px;
+}
+
+.circle2 {
+  top: 220px;
+  right: 30px;
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 180px 30px 30px;
+}
+
+.content h1 {
+  color: #6e2db5;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.content h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about, .offer {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about h3, .offer h3 {
+  color: #6e2db5;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.offer ul {
+  list-style: none;
+}
+
+.offer ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.offer ul li::before {
+  content: "●";
+  color: #6e2db5;
+  position: absolute;
+  left: 0;
+}
+
+.footer {
+  background: #6e2db5;
+  color: white;
+  padding: 15px 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive styles */
+@media(max-width: 768px) {
+  .about, .offer {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .circle-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle1 {
+    top: 200px;
+    left: 10px;
+  }
+
+  .circle2 {
+    top: 200px;
+    right: 10px;
+  }
+
+  .discount-badge {
+    left: 20px;
+    top: 20px;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .content {
+    padding-top: 100px;
+  }
+}
